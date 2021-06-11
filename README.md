@@ -13,7 +13,7 @@ go get github.com/flaviomilan/go-cpfcnpj
 
 ## Utilização
 
-Existem duas funções para validação: `ValidarCPF` e `ValidarCNPJ`. Ambas recebem o documento como string.
+Existem duas funções para validação: `ValidateCPF` e `ValidateCNPJ`. Ambas recebem o documento como string e retornam um booleano.
 
 ### Exemplo
 
@@ -27,8 +27,8 @@ import (
 )
 
 func main() {
-	cpf := cpfcnpj.ValidarCPF("086.293.010-31")
-	cnpj := cpfcnpj.ValidarCNPJ("91.839.416/0001-53")
+	cpf := cpfcnpj.ValidateCPF("086.293.010-31")
+	cnpj := cpfcnpj.ValidateCNPJ("91.839.416/0001-53")
 
 	fmt.Println(cpf, cnpj)
 }
